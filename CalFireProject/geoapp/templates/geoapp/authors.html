@@ -1,0 +1,81 @@
+{% extends "geoapp/base.html" %}
+{% load static %}
+
+{% block title %}Authors{% endblock %}
+
+{% block extra_head %}
+<style>
+
+  /* for the links the cards */
+  .card a {
+    color: #5c018e; 
+    text-decoration: none; 
+  }
+
+  /* Hover-Effekt for the links */
+  .card a:hover {
+    text-decoration: underline;
+  }
+
+  /* color for the card-header */
+  .bg-purple {
+    background-color: #4B0082; 
+    color: white; 
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+  <div class="row align-items-start mt-3">
+    <h1>Authors</h1>
+    <!-- <small class="text-muted">Aka the best friends :D</small> -->
+    <!-- picture in the left column -->
+    <div class="col-md-6 text-center">
+      
+      <img id="authorpicture" src="{% static 'geoapp/images/AnneundLisa3.jpg' %}" alt="Authors picture" class="img-fluid rounded shadow mt-3">
+    </div>
+
+    <!-- right columns: Cards -->
+    <div class="col-md-6">
+      <div class="row g-3 mt-5">
+        
+        
+        <!-- first card: Anne -->
+        <div class="col-12 col-lg-6">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+                <div class="card-header bg-purple"> 
+                    <h5 class="card-title">Anne</h5>
+                </div><br>
+              <h6 class="card-subtitle mb-2 text-muted">Applied Geoinformatics Master's Student</h6>
+              <p class="card-text">Anne is currently studying for a Master's degree in Applied Geoinformatics at the University of Salzburg, 
+                                    following her previous studies in Geography. Anne is passionate about GIS analysis and she enjoys mapping technologies to support environmental research and wildifre management</p>
+              <a href="https://www.plus.ac.at/geoinformatik/?lang=en" class="card-link">Applied Geoinformatics (MSc)</a> <br>
+              <a href="https://www.uni-bamberg.de/geographie/" class="card-link">Geography (BSc)</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- second card: Lisa-->
+        <div class="col-12 col-lg-6">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <div class="card-header bg-purple"> 
+                    <h5 class="card-title">Lisa</h5>
+                </div><br>
+              <h6 class="card-subtitle mb-2 text-muted">Applied Geoinformatics Master's Student</h6>
+              <p class="card-text">Lisa is currently pursuing a Master's degree in Applied Geoinformatics at the University of Salzburg, building on her background in Cartography and Geomedia Technology. 
+                                 She enjoys creating visually engaging maps and designing intuitive web applications, with the goal of developing interactive tools that make geographic information accessible to everyone.</p>
+              <a href="https://www.plus.ac.at/geoinformatik/?lang=en" class="card-link">Applied Geoinformatics (MSc)</a> <br>
+              <a href="https://geo.hm.edu/studiengange_de/studiengang_detail_587.de.html" class="card-link">Geovisualdesign - Geomatics (BEng)</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

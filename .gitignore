@@ -1,0 +1,37 @@
+# ---------------------------
+# Python/Django
+# ---------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.log
+
+# ---------------------------
+# Virtual Environment
+# ---------------------------
+venv/
+ENV/
+env/
+*.env
+
+# ---------------------------
+# OS-specific
+# ---------------------------
+.DS_Store
+Thumbs.db
+
+# ---------------------------
+# IDEs / Editors
+# ---------------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ---------------------------
+# Django media / static (optional)
+# ---------------------------
+staticfiles/
+media/
